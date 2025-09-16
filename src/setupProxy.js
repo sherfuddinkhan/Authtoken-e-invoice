@@ -5,7 +5,7 @@ module.exports = function(app) {
   app.use(
     '/einvital', // This is the path prefix that will trigger the proxy
     createProxyMiddleware({
-      target: 'https://api.sandbox.core.irisirp.com', // The base URL of your API
+      target: 'https://einv1api.gstsandbox.nic.in', // The base URL of your API
       changeOrigin: true, // Needed for virtual hosted sites
       secure: false, // Set to true for production, false if you have self-signed certs or issues with sandbox
       pathRewrite: {
